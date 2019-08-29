@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springdb" />
+        <module name="spring-user" />
+        <module name="spring-feign" />
+        <module name="spring-auth" />
+        <module name="spring-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-auth" target="1.8" />
+      <module name="spring-feign" target="1.8" />
+      <module name="spring-gateway" target="1.8" />
+      <module name="spring-user" target="1.8" />
+      <module name="springcloud-eureka" target="1.8" />
+      <module name="springdb" target="1.8" />
+      <module name="springeureka" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-auth" options="-parameters" />
+      <module name="spring-feign" options="-parameters" />
+      <module name="spring-gateway" options="-parameters" />
+      <module name="spring-user" options="-parameters" />
+      <module name="springdb" options="-parameters" />
+      <module name="springeureka" options="-parameters" />
+    </option>
+  </component>
+</project>

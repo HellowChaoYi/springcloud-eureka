@@ -1,0 +1,79 @@
+ 		body {
+            background-image: url(http://localhost:8091/static/img/login-bg.png);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .login-box {
+            position: absolute;
+            left: 1036px;
+            top: 196px;
+            width: 400px;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 40px 40px 0 0 #348fc6;
+            border-radius: 3px;
+        }
+        
+        .login-box h2 {
+            color: #0896d8;
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .login-box .input-box {
+            position: relative;
+            margin-top: 30px;
+        }
+        
+        .login-box .input-item {
+            height: 50px;
+            width: 100%;
+            border: 1px solid #f1f1f1;
+            padding-left: 40px;
+            border-radius: 3px;
+        }
+        
+        .login-box .input-item.empty {
+            border: 1px solid #ec3f3a;
+        }
+        
+        .login-box .login-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            opacity: .5;
+        }
+        
+        .remenber {
+            text-align: right;
+            margin-top: 30px;
+        }
+        
+        .remenber input {
+            cursor: pointer;
+        }
+        
+        #login-btn {
+            height: 50px;
+            width: 100%;
+            margin-top: 30px;
+            background-color: #0896d8;
+            border-radius: 3px;
+            box-shadow: 0 4px 0 0 #0266a2;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        
+        #login-btn:active {
+            margin-top: 32px;
+            margin-bottom: -2px;
+            box-shadow: 0 2px 0 0 #0266a2;
+            letter-spacing: 2;
+        }

@@ -1,0 +1,26 @@
+server:
+  port: 8095
+  tomcat:
+   uri0-encoding: UTF-8
+
+spring:
+  application: 
+    name: spring-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lowerCaseServiceId: true
+      routes:
+      - id: server-db
+        uri: lb://server-db
+        predicates:
+          - Path=/server/**
+        filters:
+          - StripPrefix=1
+  main:
+    allow-bean-definition-overriding: true
