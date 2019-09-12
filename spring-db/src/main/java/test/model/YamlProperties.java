@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "spring.datasource")//spring:datasource:
 @PropertySource(value = {"classpath:application-dev.yml"})
-public class YamlProperties_t {
+public class YamlProperties {
 	
 	@Value("${url}")
 	private String url;

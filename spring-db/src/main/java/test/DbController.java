@@ -1,8 +1,5 @@
 package test;
 
-import java.io.File;
-import java.io.IOException;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -16,17 +13,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 
 import test.model.Jsonresult;
-import test.model.User;
-import test.model.YamlProperties_t;
+import test.model.YamlProperties;
 
 
 
@@ -41,14 +35,14 @@ public class DbController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
     @Autowired
-    public  YamlProperties_t yamlProperties;
+    public YamlProperties yamlProperties;
 
 	@RequestMapping(value="/getyml")
 	@SentinelResource(value="getyml")
 	public Jsonresult getyml(){
 		Jsonresult jr=new Jsonresult();
 	   
-		List<YamlProperties_t> testlist = new ArrayList<YamlProperties_t>();
+		List<YamlProperties> testlist = new ArrayList<YamlProperties>();
 		testlist.add(yamlProperties);
 	    jr.setData(testlist);
 	    jr.setCount(1000);
