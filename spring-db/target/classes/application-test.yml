@@ -1,0 +1,42 @@
+server:
+  port: 8081
+  timeout: 10
+  tomcat:
+   uri0-encoding: UTF-8
+
+spring:
+  application:
+    name: server-db
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.17.0.2:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+  datasource:
+    url: jdbc:mysql://localhost:3306/database
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+#security:
+#  oauth2:
+#    resource:
+#      user-info-uri: http://localhost:8096/users/current
+#    client:
+#      id: client_2
+#      client-secret: 123456
+#      access-token-uri: http://localhost:8096/oauth/token
+#      grant-type: client_credentials,password
+#      scope: server
+mybatis:
+#  扫描数据持久对应的实体类 路径 Package级别
+  type-aliases-package: test.model
+#  mybatis 对应的 .xml文件路径
+  mapper-locations: classpath:mapper/*.xml
+#  多层级目录  mapper-locations: classpath:mapper/**/**.xml
