@@ -1,0 +1,12 @@
+com\spring\gatewayadmin\route\entity\GatewayInfo.class
+com\spring\gatewayadmin\GatewayAdminApp.class
+com\spring\gatewayadmin\MybatisPlusGenerator$1.class
+com\spring\gatewayadmin\route\service\impl\GatewayInfoServiceImpl.class
+com\spring\gatewayadmin\route\entity\GatewayInfoForm.class
+com\spring\gatewayadmin\route\controller\GatewayInfoController.class
+com\spring\gatewayadmin\route\entity\GatewayFilters.class
+com\spring\gatewayadmin\MybatisPlusGenerator.class
+com\spring\gatewayadmin\route\service\IGatewayInfoService.class
+com\spring\gatewayadmin\route\mapper\GatewayInfoMapper.class
+com\spring\gatewayadmin\route\entity\GatewayPredicates.class
+com\spring\gatewayadmin\MybatisPlusGenerator$2.class

@@ -64,7 +64,8 @@
   <modules>
   	<module>spring-user</module>
   	<module>spring-feign</module>
-  	<module>springdb</module>
+  	<module>spring-db</module>
+  	<module>spring-gateway-admin</module>
     <module>spring-gateway</module>
     <module>spring-auth</module>
   </modules>

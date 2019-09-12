@@ -1,0 +1,10 @@
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\GatewayAdminApp.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\controller\GatewayInfoController.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\entity\GatewayPredicates.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\entity\GatewayInfoForm.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\service\IGatewayInfoService.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\entity\GatewayInfo.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\MybatisPlusGenerator.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\mapper\GatewayInfoMapper.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\entity\GatewayFilters.java
+F:\app\springcloud\spring-gateway-admin\src\main\java\com\spring\gatewayadmin\route\service\impl\GatewayInfoServiceImpl.java
