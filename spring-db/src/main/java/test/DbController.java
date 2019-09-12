@@ -27,7 +27,7 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import test.model.Jsonresult;
 import test.model.User;
 import test.model.YamlProperties_t;
-import test.service.UserService;
+
 
 
 
@@ -80,18 +80,5 @@ public class DbController {
         }
         return list;
     }
-    @Autowired
-    private UserService userService;
 
-    @RequestMapping(value="/getUser" )
-    public List<User> getDb(){
-    	List<User> hello=null;
-        try {
-          hello = userService.hello( );
-        }catch (Exception e){
-            System.out.println(e );
-        }
-        return hello;
-
-    }
 }
