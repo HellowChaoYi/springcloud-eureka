@@ -1,5 +1,7 @@
 package test.user.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 import test.user.entity.Userlogin;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -11,6 +13,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author wei
  * @since 2019-09-12
  */
+@Mapper
+@Component(value = "UserloginMapper")
 public interface UserloginMapper extends BaseMapper<Userlogin> {
 
 }

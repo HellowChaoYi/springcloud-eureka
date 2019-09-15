@@ -16,6 +16,7 @@ layui.use(['element', 'layer', 'form', 'table'], function() {
         if (target.nodeName.toLocaleLowerCase() == 'a' && hasClass(target, 'this_nav')) {
             //渲染
             document.querySelector('#main_contain').innerHTML = target.innerText;
+
             if (document.querySelector('#main_contain').innerHTML == '通用参数设置') {
                 let tableBox = document.createElement('div');
                 tableBox.id = 'demo';
@@ -36,8 +37,11 @@ layui.use(['element', 'layer', 'form', 'table'], function() {
                         ]
                     ]
                 });
-            }
 
+            } else if(document.querySelector('#main_contain').innerHTML=='模块管理'){
+                console.log('qweqweqwe');
+                document.querySelector('#main_contain').innerHTML=='test';
+            }
             let breadArr = [];
             breadArr.push(target.getAttribute('data-name'));
             let parentNodes = target;

@@ -24,6 +24,10 @@ spring:
           - StripPrefix=1
   main:
     allow-bean-definition-overriding: true
+  devtools:
+    restart:
+      #需要实时更新的目录
+      additional-paths: resources/**,static/**,templates/**
 management:
   endpoints:
     web:

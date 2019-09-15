@@ -71,7 +71,7 @@
                     //登录
                      //登录
 					$.ajax({  
-						url : "http://127.0.0.1:8095/server/db/getUsers", 
+						url : "http://127.0.0.1:8095/server/user/userlogin/select",
 						dataType : 'json',
 						data : {"username":username,"password":password},
 						success : function(result) {

@@ -3,19 +3,16 @@ server:
   timeout: 10
   tomcat:
    uri0-encoding: UTF-8
- 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://192.168.2.210:8888/eureka/
-  register-with-eureka: true
-  fetch-registry: true
 
 spring:
   application:
     name: server-db
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/database
+    url: jdbc:mysql://127.0.0.1:3306/dbtest
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
