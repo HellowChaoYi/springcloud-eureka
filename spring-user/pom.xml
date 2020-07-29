@@ -12,11 +12,6 @@
   
   <dependencies>
 
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-devtools</artifactId>
-          <optional>true</optional>
-      </dependency>
 	<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>    
@@ -33,18 +28,13 @@
 	    <artifactId>nekohtml</artifactId>
 	    <version>1.9.18</version>
 	</dependency>
-	
-	<dependency>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-devtools</artifactId>
-	    <scope>runtime</scope>
-	</dependency>
-	<!-- allibabba nacos -->
-	<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-			<version>0.9.0.RELEASE</version>
-	</dependency>
+
+<!--	&lt;!&ndash; allibabba nacos &ndash;&gt;-->
+<!--	<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
+<!--			<version>0.9.0.RELEASE</version>-->
+<!--	</dependency>-->
   </dependencies>
 
     <build>
