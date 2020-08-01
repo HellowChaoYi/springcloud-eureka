@@ -5,11 +5,14 @@
         <groupId>com.test.cloud</groupId>
         <artifactId>springcloud-eureka</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath/>
     </parent>
     <artifactId>springdb</artifactId>
     <properties>
         <msql.version>8.0.20</msql.version>
         <mybatis.version>3.3.1.tmp</mybatis.version>
+        <druid.version>1.1.22</druid.version>
+        <dynamic.version>3.0.0</dynamic.version>
     </properties>
     <dependencies>
         <!-- 添加Web特性 -->
@@ -28,6 +31,11 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+            <version>${dynamic.version}</version>
+        </dependency>
         <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -35,16 +43,17 @@
             <version>1.18.0</version>
             <scope>provided</scope>
         </dependency>
-        <!-- freemarker -->
+        <!--公共部分-->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
+            <version>2.3.30</version>
         </dependency>
-        <!-- actuator -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
+        <!--        &lt;!&ndash; actuator &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+        <!--        </dependency>-->
 
         <!-- Mysql -->
         <dependency>
@@ -56,19 +65,18 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.1.2.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-
-        <!--        &lt;!&ndash; allibabba sentinel &ndash;&gt;-->
         <!--        <dependency>-->
-        <!--            <groupId>org.springframework.cloud</groupId>-->
-        <!--            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
-        <!--            <version>0.9.0.RELEASE</version>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-jdbc</artifactId>-->
         <!--        </dependency>-->
-
+        <!--druid-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
