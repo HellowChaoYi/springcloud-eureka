@@ -10,15 +10,15 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-  thymeleaf:
-    cache: false
-    check-template: true
-    check-template-location: true
-    enabled: true
-    encoding: UTF-8
-    content-type: text/html
-    prefix: classpath:/templates/
-    mode: HTML5
-    suffix: .html
-  mvc:
-    static-path-pattern: /static/**
+#  thymeleaf:
+#    cache: false
+#    check-template: true
+#    check-template-location: true
+#    enabled: true
+#    encoding: UTF-8
+#    content-type: text/html
+#    prefix: classpath:/templates/
+#    mode: HTML5
+#    suffix: .html
+#  mvc:
+#    static-path-pattern: /static/**

@@ -3,18 +3,19 @@ package per.wei.cloud.until;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.extern.slf4j.Slf4j;
+
 import org.apache.commons.lang.StringUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import per.wei.cloud.constant.ReturnConstant;
+
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-@Slf4j
+
 @Component("utilImpl")
 public class UtilImpl implements Util {
 
@@ -76,7 +77,7 @@ public class UtilImpl implements Util {
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-                log.error(e.getMessage());
+//                log.error(e.getMessage());
             }
         }
         return mapResult;
@@ -224,7 +225,7 @@ public class UtilImpl implements Util {
     }
 
     @Override
-    public ResponseEntity createErrorResult(Map<String, Object> content, String result, Object info) {
+    public ResponseEntity createErrorResult(Map<String, Object> content, Object result, String info) {
         if(content==null){
             content = createEmptyResult();
         }
@@ -236,7 +237,7 @@ public class UtilImpl implements Util {
     }
 
     @Override
-    public ResponseEntity createOkResult(Map<String, Object> content, String result, Object info) {
+    public ResponseEntity createOkResult(Map<String, Object> content, Object result, String info) {
         if(content==null){
             content = createEmptyResult();
         }

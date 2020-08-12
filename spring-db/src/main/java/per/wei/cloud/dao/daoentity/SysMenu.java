@@ -1,8 +1,6 @@
 package per.wei.cloud.dao.daoentity;
 
 import java.io.Serializable;
-
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -13,7 +11,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author wei
- * @since 2020-07-29
+ * @since 2020-08-11
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,14 +19,16 @@ import lombok.experimental.Accessors;
 public class SysMenu implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @TableId
-    private String meunId;
+
+    private String menuId;
 
     private String title;
 
     private String icon;
 
     private String parentId;
+
+    private Integer sort;
 
     private Integer level;
 

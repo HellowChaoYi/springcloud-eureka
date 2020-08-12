@@ -1,6 +1,5 @@
-package per.wei.cloud.server;
+package per.wei.cloud.service;
 
-import org.springframework.context.annotation.Configuration;
 //import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 //import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 //import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;

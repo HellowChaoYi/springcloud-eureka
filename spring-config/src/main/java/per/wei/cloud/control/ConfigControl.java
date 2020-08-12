@@ -28,7 +28,7 @@ public class ConfigControl {
         if ( !res.containsKey(ReturnConstant.FAILMSG) ) {
             responseEntity = util.createOkResult(null,res,null);
         }else {
-            responseEntity = util.createErrorResult(null,null,res.get(ReturnConstant.FAILMSG));
+            responseEntity = util.createErrorResult(null,res.get(ReturnConstant.FAILMSG),null);
         }
         System.out.println("out put");
         return responseEntity;

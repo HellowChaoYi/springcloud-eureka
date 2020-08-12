@@ -12,7 +12,7 @@ import java.util.Map;
  **/
 @Component
 public class ConfigClientFallBackFactory implements FallbackFactory<ConfigClient> {
-     @Override
+    @Override
     public ConfigClient create(Throwable throwable) {
         return new ConfigClient() {
             @Override

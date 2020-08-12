@@ -26,7 +26,7 @@ public interface Util {
     public String jsonResult(String status, String msg, String content);   //创建返回结果
     public String getPrimary();
     public Map<String,Object> createEmptyResult();
-    public ResponseEntity createErrorResult(Map<String, Object> content, String result, Object info);
-    public ResponseEntity createOkResult(Map<String, Object> content, String result, Object info);
+    public ResponseEntity createErrorResult(Map<String, Object> content, Object result, String info);
+    public ResponseEntity createOkResult(Map<String, Object> content, Object result, String info);
 
 }
