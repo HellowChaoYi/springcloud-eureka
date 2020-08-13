@@ -39,4 +39,5 @@ public class SysUser implements Serializable {
     private LocalDateTime createtime;
 
     private SysRole sysRoles;
+
 }
