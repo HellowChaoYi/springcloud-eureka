@@ -11,7 +11,7 @@
     <select id="getUserRole" resultMap="UserRole">
         SELECT
 			u.username,
-			u.NAME,
+			u.name,
 			r.rolename
 		FROM
 			( sys_user u LEFT JOIN sys_user_role_pk p ON p.user_id = u.user_id )
