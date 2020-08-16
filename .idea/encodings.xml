@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-db" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-gateway" charset="UTF-8" />

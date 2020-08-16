@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-config" />
+        <module name="spring-cache" />
         <module name="spring-gateway-admin" />
         <module name="spring-gateway" />
         <module name="spring-feign" />
@@ -16,6 +18,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-auth" target="1.8" />
+      <module name="spring-cache" target="1.8" />
+      <module name="spring-config" target="1.8" />
       <module name="spring-db" target="1.8" />
       <module name="spring-feign" target="1.8" />
       <module name="spring-gateway" target="1.8" />
@@ -28,6 +32,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-auth" options="-parameters" />
+      <module name="spring-cache" options="-parameters" />
+      <module name="spring-config" options="-parameters" />
       <module name="spring-db" options="-parameters" />
       <module name="spring-feign" options="-parameters" />
       <module name="spring-gateway" options="-parameters" />

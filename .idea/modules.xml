@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-auth/spring-auth.iml" filepath="$PROJECT_DIR$/spring-auth/spring-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cache/spring-cache.iml" filepath="$PROJECT_DIR$/spring-cache/spring-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config/spring-config.iml" filepath="$PROJECT_DIR$/spring-config/spring-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-db/spring-db.iml" filepath="$PROJECT_DIR$/spring-db/spring-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-feign/spring-feign.iml" filepath="$PROJECT_DIR$/spring-feign/spring-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-gateway/spring-gateway.iml" filepath="$PROJECT_DIR$/spring-gateway/spring-gateway.iml" />
