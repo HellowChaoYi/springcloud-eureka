@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+target
+spring-auth/target/
+spring-cache/target/
+spring-config/target/
+spring-db/target/
+spring-feign/target/
+spring-gateway-admin/target/
+spring-gateway/target/
+spring-user/target/
+

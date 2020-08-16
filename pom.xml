@@ -106,5 +106,7 @@
         <module>spring-gateway-admin</module>
         <module>spring-gateway</module>
         <module>spring-auth</module>
+        <module>spring-cache</module>
+        <module>spring-config</module>
     </modules>
 </project>
