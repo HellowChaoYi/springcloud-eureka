@@ -17,6 +17,3 @@ spring-gateway-admin/target/
 spring-gateway/target/
 spring-user/target/
 
-!/springcloud-eureka.iml
-!/.settings/
-!/.idea/
