@@ -2,9 +2,6 @@ package per.wei.cloud.dao.daoentity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
-import java.util.List;
-
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -15,7 +12,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author wei
- * @since 2020-07-29
+ * @since 2020-09-08
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -23,14 +20,16 @@ import lombok.experimental.Accessors;
 public class SysUser implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @TableId
+
     private String userId;
 
     private String username;
 
     private String password;
 
-    private Integer mobilephone;
+    private Integer sex;
+
+    private String mobilephone;
 
     private String email;
 
@@ -38,6 +37,5 @@ public class SysUser implements Serializable {
 
     private LocalDateTime createtime;
 
-    private SysRole sysRoles;
 
 }

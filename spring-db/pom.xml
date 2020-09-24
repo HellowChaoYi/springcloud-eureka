@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/>
     </parent>
-    <artifactId>springdb</artifactId>
+    <artifactId>spring-db</artifactId>
     <properties>
         <msql.version>8.0.20</msql.version>
         <mybatis.version>3.3.1.tmp</mybatis.version>

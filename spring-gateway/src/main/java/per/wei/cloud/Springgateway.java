@@ -23,23 +23,24 @@ import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebFilterChain;
 
 import reactor.core.publisher.Mono;
+
 @RestController
 @SpringBootApplication
 public class Springgateway {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		SpringApplication.run(Springgateway.class, args);
-		
-	}
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        SpringApplication.run(Springgateway.class, args);
 
-	@RequestMapping("/fallback")
+    }
+
+    @RequestMapping("/fallback")
     public Mono<String> fallback() {
         return Mono.just("fallback");
     }
-	
-	private static final String MAX_AGE = "18000L";
-	 
+
+    private static final String MAX_AGE = "18000L";
+
     @Bean
     public WebFilter corsFilter() {
         return (ServerWebExchange ctx, WebFilterChain chain) -> {
@@ -52,7 +53,7 @@ public class Springgateway {
 //                headers.add(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, requestHeaders.getOrigin());
                 headers.addAll(HttpHeaders.ACCESS_CONTROL_ALLOW_HEADERS, requestHeaders
                         .getAccessControlRequestHeaders());
-                if(requestMethod != null){
+                if (requestMethod != null) {
                     headers.add(HttpHeaders.ACCESS_CONTROL_ALLOW_METHODS, requestMethod.name());
                 }
                 headers.add(HttpHeaders.ACCESS_CONTROL_ALLOW_CREDENTIALS, "true");
@@ -63,17 +64,17 @@ public class Springgateway {
                     response.setStatusCode(HttpStatus.OK);
                     return Mono.empty();
                 }
- 
+
             }
             return chain.filter(ctx);
         };
     }
- 
+
     @Bean
     public ServerCodecConfigurer serverCodecConfigurer() {
         return new DefaultServerCodecConfigurer();
     }
- 
+
     /**
      * 如果使用了注册中心（如：Eureka），进行控制则需要增加如下配置
      */

@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author wei
- * @since 2020-08-11
+ * @since 2020-08-24
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -28,7 +28,7 @@ public class SysMenu implements Serializable {
 
     private String parentId;
 
-    private Integer sort;
+    private String sort;
 
     private Integer level;
 

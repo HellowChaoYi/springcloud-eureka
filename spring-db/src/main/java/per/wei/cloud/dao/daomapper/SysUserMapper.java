@@ -1,5 +1,6 @@
 package per.wei.cloud.dao.daomapper;
 
+import per.wei.cloud.dao.daoentity.RoleWithPer;
 import per.wei.cloud.dao.daoentity.SysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -15,5 +16,7 @@ import java.util.Map;
  * @since 2020-07-29
  */
 public interface SysUserMapper extends BaseMapper<SysUser> {
-    List<SysUser> getUserRole ();
+    List getUserRole (Map map);
+    Map getRolePer(Map map);
+    Map getuser();
 }

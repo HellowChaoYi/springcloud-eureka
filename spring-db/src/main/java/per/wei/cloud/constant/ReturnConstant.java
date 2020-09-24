@@ -1,8 +1,13 @@
 package per.wei.cloud.constant;
 
+
 /**
- * 返回参数
- * pengwei
+ * <p>
+ *
+ * </p>
+ *
+ * @author wei
+ * @since 2020-08-28
  */
 public class ReturnConstant {
     public static String STATUS = "status";

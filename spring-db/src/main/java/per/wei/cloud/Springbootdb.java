@@ -8,9 +8,6 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-
-//@SpringBootApplication声明让spring boot自动给程序进行必要的配置
-//排除druid原生加载方式DruidDataSourceAutoConfigure
 @SpringBootApplication(exclude = DruidDataSourceAutoConfigure.class)
 @EnableDiscoveryClient
 @EnableFeignClients
