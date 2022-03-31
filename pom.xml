@@ -21,7 +21,7 @@
         <docker.image.prefix>springboot</docker.image.prefix>
         <nacos.version>2.1.2.RELEASE</nacos.version>
         <fastjson.version>1.2.51</fastjson.version>
-        <webflux.version>2.3.0.RELEASE</webflux.version>
+        <webflux.version>2.5.12</webflux.version>
     </properties>
 
     <dependencies>
